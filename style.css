@@ -36,11 +36,15 @@ img{
 .button{
     padding: 1rem 0;
     border: none;
+    background-color: rgb(60, 197, 179);
     font-size: 1rem;
-    background-color: aquamarine;
     cursor: pointer;
     transition: all .3s linear;
     letter-spacing: .25rem;
+}
+
+.button:not(.live){
+    background-color: aquamarine;
 }
 
 .btn-container{
@@ -55,12 +59,16 @@ img{
     border-top-right-radius: .5rem;
 }
 
-.button:hover{
+.button:hover:not(.live){
     opacity: .5;
 }
 
 .tabs-content{
     padding: 2rem 1.5rem;
+}
+
+h3{
+    margin: 1rem 0;
 }
 
 @media (min-width: 992px) {
